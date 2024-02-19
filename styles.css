@@ -22,10 +22,15 @@
 p {
     font-size: 16px;
     font-family: var(--primary-font);
+    color: var(--Wenge-Brown);
 }
 
 body {
-    background-color: var(--Rose-White);
+    background-color: var(--Eggshell);
+}
+
+hr {
+    color: var(--Light-Grey);
 }
 
 h1 {
@@ -55,7 +60,7 @@ li::marker {
 
 b {
     font-family: var(--primary-font);
-    color: var(--Wenge-Brown);
+    color: var(--Dark-Charcoal);
 }
 
 ul {
@@ -75,6 +80,7 @@ ol {
 ol > li {
     font-family: var(--secondary-font);
     padding-left: 3%;
+    color: var(--Wenge-Brown);
 }
 
 .card {
@@ -93,6 +99,30 @@ ol > li {
     border-radius: 16px;
 }
 
+@media (max-width: 400px) {
+    .card {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .card-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 0px;
+        margin: 0;
+    }
+
+    .card-body {
+        padding: 1% 5%;
+    }
+
+    li {
+        margin-left: 5%;
+    }
+}
+
 .card-highlight {
     background-color: var(--Rose-White);
     padding: 2% 5%;
@@ -104,11 +134,16 @@ ol > li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 2%;
+    color: var(--Wenge-Brown);
 }
 
 .table-data {
     color: var(--Nutmeg);
     font-weight: 600;
+}
+
+.table-title > .item {
+    color: var(--Wenge-Brown);
 }
 
 .item {
